@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="573.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qrcode.FirstPage">
+   <children>
+      <Circle fill="#ff8815" layoutY="-9.0" radius="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Text fill="#ff8815" layoutX="93.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Handy to use QR code">
+         <font>
+            <Font name="Agency FB Bold" size="59.0" />
+         </font>
+         <effect>
+            <InnerShadow blurType="GAUSSIAN" choke="0.05" height="0.0" radius="3.3925" width="15.57">
+               <color>
+                  <Color red="0.8500000238418579" green="1.0" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </Text>
+      <Text fx:id="proccess" fill="#605f5e" layoutX="359.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Easies proccesst to go!" underline="true">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="scanPic" fitHeight="104.0" fitWidth="104.0" layoutX="279.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../scan-icon-512x512-jkg0xrgt.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="createPic" fitHeight="104.0" fitWidth="95.0" layoutX="485.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../download%20(4).png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text fx:id="scan" fill="#605f5e" layoutX="311.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="scan" underline="true">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="creat" fill="#605f5e" layoutX="516.0" layoutY="513.0" strokeType="OUTSIDE" strokeWidth="0.0" text="creat" underline="true">
+         <font>
+            <Font name="System Italic" size="17.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
