@@ -10,7 +10,7 @@ import java.io.IOException;
 public class QRApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(QRApplication.class.getResource("mainPage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(QRApplication.class.getResource("reader.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("QR-Press");
         stage.setScene(scene);

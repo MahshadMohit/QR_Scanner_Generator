@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="573.0" prefWidth="853.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.qrcode.Reader">
+   <children>
+      <Text layoutX="256.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place your QR code image">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="1.0" green="0.4988333284854889" blue="0.029999999329447746" opacity="0.8756345510482788" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Text>
+      <ImageView fx:id="image" onMouseClicked="#setImage" fitHeight="183.0" fitWidth="185.0" layoutX="336.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../qr-code-scan-icon-512x512-n00f2dqf.png" />
+         </image>
+         <effect>
+            <InnerShadow choke="0.1" height="83.29" radius="52.825" width="130.01">
+               <color>
+                  <Color red="0.9700000286102295" green="0.468833327293396" opacity="0.7969542741775513" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="scan" onAction="#setScan" layoutX="368.0" layoutY="442.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #FF8815;" text="Scan!" textFill="#ffe7e7">
+         <font>
+            <Font name="Arial Bold" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="back" onMouseClicked="#setBack"  fitHeight="71.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../download.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
