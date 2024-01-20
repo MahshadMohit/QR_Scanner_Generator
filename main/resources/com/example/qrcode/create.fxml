@@ -25,7 +25,7 @@
                 </DropShadow>
             </effect>
         </Text>
-        <Button fx:id="go" layoutX="376.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #FF8815;" text="Go!" textFill="#ffe7e7">
+        <Button fx:id="go" onAction="#setGo" layoutX="376.0" layoutY="321.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #FF8815;" text="Go!" textFill="#ffe7e7">
             <font>
                 <Font name="Arial Bold" size="13.0" />
             </font>
