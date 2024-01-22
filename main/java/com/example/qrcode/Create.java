@@ -1,6 +1,5 @@
 package com.example.qrcode;
 
-import com.example.qrcode.QRController.QrGenerator;
 import com.google.zxing.WriterException;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

@@ -2,8 +2,9 @@ module com.example.qrcode {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.desktop;
-    requires core;
-    requires javase;
+
+    requires com.google.zxing;
+    requires com.google.zxing.javase;
 
 
     opens com.example.qrcode to javafx.fxml;

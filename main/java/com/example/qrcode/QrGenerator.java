@@ -1,4 +1,4 @@
-package com.example.qrcode.QRController;
+package com.example.qrcode;
 
 import java.io.File;
 import java.io.IOException;

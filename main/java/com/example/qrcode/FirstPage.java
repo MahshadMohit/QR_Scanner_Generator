@@ -65,21 +65,20 @@ public class FirstPage {
     public void setProccessNo(){
         removeEffect(proccess);
     }
-    public void setScanPic(MouseEvent e) throws IOException{
+    public void setScanPic(javafx.scene.input.MouseEvent e) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(QRApplication.class.getResource("reader.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
-    public void setCreatePic(MouseEvent e) throws IOException{
+    public void setCreatePic(javafx.scene.input.MouseEvent e) throws IOException{
         FXMLLoader fxmlLoader = new FXMLLoader(QRApplication.class.getResource("create.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
-
 
 
 

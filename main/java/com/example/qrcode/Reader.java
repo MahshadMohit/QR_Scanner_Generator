@@ -1,16 +1,18 @@
 package com.example.qrcode;
 
-import com.example.qrcode.QRController.QRReader;
 import com.google.zxing.NotFoundException;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 
-import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
 
@@ -61,7 +63,11 @@ public class Reader {
 
     }
 
-    public void setBack(MouseEvent mouseEvent) {
-
+    public void setBack(MouseEvent e) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(QRApplication.class.getResource("FirstPage.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }
